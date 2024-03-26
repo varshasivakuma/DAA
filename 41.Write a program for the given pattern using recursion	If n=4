@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+// Function to print the pattern recursively
+void printPattern(int n) {
+    // Base case: if n becomes 0, return
+    if (n == 0) {
+        return;
+    }
+
+    // First recursively call printPattern with n-1
+    printPattern(n - 1);
+
+    // Then print the numbers from 1 to n
+    for (int i = 1; i <= n; i++) {
+        printf("%d", i);
+    }
+
+    // Move to the next line after printing the numbers
+    printf("\n");
+}
+
+int main() {
+    int n = 4;
+    printPattern(n);
+    return 0;
+}
