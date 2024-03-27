@@ -2,19 +2,13 @@
 #include <limits.h>
 
 #define V 4 // Number of vertices in the graph
-
-// Function to perform Floyd's Algorithm
 void floydAlgorithm(int graph[V][V]) {
     int dist[V][V];
-
-    // Initialize distance matrix with graph weights
     for (int i = 0; i < V; i++) {
         for (int j = 0; j < V; j++) {
             dist[i][j] = graph[i][j];
         }
     }
-
-    // Update distance matrix by considering all intermediate vertices
     for (int k = 0; k < V; k++) {
         for (int i = 0; i < V; i++) {
             for (int j = 0; j < V; j++) {
@@ -25,8 +19,6 @@ void floydAlgorithm(int graph[V][V]) {
             }
         }
     }
-
-    // Print the shortest distances between all pairs of vertices
     printf("Shortest distances between all pairs of vertices:\n");
     for (int i = 0; i < V; i++) {
         for (int j = 0; j < V; j++) {
