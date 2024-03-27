@@ -1,6 +1,4 @@
 #include <stdio.h>
-
-// Function to find the largest element of an array
 int findLargest(int arr[], int size) {
     int max = arr[0];
     for (int i = 1; i < size; i++) {
