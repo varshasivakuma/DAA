@@ -1,6 +1,4 @@
 #include <stdio.h>
-
-// Function to check if a number is prime recursively
 int isPrime(int n, int divisor) {
     if (n <= 2)
         return (n == 2);
