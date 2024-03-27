@@ -1,6 +1,4 @@
 #include <stdio.h>
-
-// Function to calculate GCD using recursive factorization
 int gcd(int a, int b) {
     if (b == 0)
         return a;
