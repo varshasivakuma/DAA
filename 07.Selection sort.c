@@ -11,7 +11,6 @@ int main() {
     }
     printf("\n");
 
-    // Selection Sort
     for (i = 0; i < n - 1; i++) {
         min_index = i;
         for (j = i + 1; j < n; j++) {
