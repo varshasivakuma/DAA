@@ -10,7 +10,7 @@ int main() {
 
     clock_t start_time = clock();
 
-    // Matrix multiplication
+ 
     for (int i = 0; i < N; i++) {
         for (int j = 0; j < N; j++) {
             for (int k = 0; k < N; k++) {
