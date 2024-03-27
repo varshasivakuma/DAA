@@ -13,7 +13,6 @@ int main() {
     char source[] = "Hello, World!";
     char destination[100];
 
-    // Copying string
     copyString(source, destination);
 
     printf("Source string: %s\n", source);
